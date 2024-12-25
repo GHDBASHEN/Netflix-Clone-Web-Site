@@ -1,0 +1,186 @@
+<html>
+ <head>
+  <title>
+   Netflix Clone
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #141414;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #141414;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .movie-poster {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+  </style>
+ </head>
+ <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     Netflix
+    </a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        TV Shows
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Movies
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        New &amp; Popular
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        My List
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="carousel slide" data-bs-ride="carousel" id="mainCarousel">
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+     <img alt="A dramatic scene from a popular TV show with dark and moody lighting" class="d-block w-100" height="500" src="https://storage.googleapis.com/a1aa/image/K420r9qpvFZ8JNANy8MYpeNxBOQzlhwUfQFpApcsHgQDYUenA.jpg" width="1200"/>
+    </div>
+    <div class="carousel-item">
+     <img alt="A vibrant action scene from a blockbuster movie with explosions and fast cars" class="d-block w-100" height="500" src="https://storage.googleapis.com/a1aa/image/sH5CbKK3Im7uP9DnoUqI1BbP7XUezr9HNM0PkMgtZl69LKfTA.jpg" width="1200"/>
+    </div>
+    <div class="carousel-item">
+     <img alt="A serene landscape from a nature documentary with lush greenery and a calm river" class="d-block w-100" height="500" src="https://storage.googleapis.com/a1aa/image/up3nB3xVD7LwFxVNCDjQCWzniUFRxRUsyLu782aQKID9FlfJA.jpg" width="1200"/>
+    </div>
+   </div>
+   <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#mainCarousel" type="button">
+    <span aria-hidden="true" class="carousel-control-prev-icon">
+    </span>
+    <span class="visually-hidden">
+     Previous
+    </span>
+   </button>
+   <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#mainCarousel" type="button">
+    <span aria-hidden="true" class="carousel-control-next-icon">
+    </span>
+    <span class="visually-hidden">
+     Next
+    </span>
+   </button>
+  </div>
+  <div class="container mt-4">
+   <h2 class="section-title">
+    Trending Now
+   </h2>
+   <div class="row">
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a trending action movie with a hero in a dynamic pose" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/BBuZjxteFazALCkb9eTSB7TJvqTyZ4rxSHw6ypVGg24QYUenA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a trending romantic movie with a couple embracing" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/qTPtflGcup2fvkGLbMzhrK1YMmwhKTtVd5qZSwiAZaUvXUenA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a trending horror movie with a creepy figure in the background" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/TTXptPKZyTK8Np6ZeVnqyd8TI1By386G3Bm06IloY87fXUenA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a trending comedy movie with a group of friends laughing" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/zJekdTrBg6RRSKfBj3nD4vB6nvm9vCdkh1YMjV2pYNTFYUenA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a trending sci-fi movie with futuristic elements and spaceships" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/QuY4NQ5yg878DJ0AxnRJbU7usLeFgdfpPae0iDCzrJSowo8nA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a trending documentary with a thought-provoking image" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/cLHDKcU5kHrSEpF8OJLEuC65IGz95gqiFuQlYe471fVyXUenA.jpg" width="200"/>
+    </div>
+   </div>
+   <h2 class="section-title">
+    Popular on Netflix
+   </h2>
+   <div class="row">
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a popular drama series with intense character portraits" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/LRvvb8zGr6L3Bhnd772nCI5NfNctrVOhcJ1CbuBr5f1MYUenA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a popular animated series with colorful characters" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/Yd6QbWhvV676NhwJoW61VTiP37LHlHfKdH3ZkAtz2uk4LKfTA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a popular thriller series with a mysterious vibe" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/fBdCc4S1uUxzcilfhQ9uUbfPfojweD5Hat6KeepY7fupIYUenA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a popular fantasy series with magical creatures" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/cYQ4ATVrRO4MGpSDrG0XHPvTCJ8SScVpGwX4N0GHrgWfLKfTA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a popular crime series with detectives and crime scenes" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/4ZbXZCd16iYhBFlsLiruOx0bvy1MWnSqeY51lLYC1ZC7LKfTA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a popular family series with heartwarming moments" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/eWJ780HkbkXVBCF5Hwhp0gc4ieLXuMXkV4rhOobHkSuGYUenA.jpg" width="200"/>
+    </div>
+   </div>
+   <h2 class="section-title">
+    New Releases
+   </h2>
+   <div class="row">
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a new release action movie with a hero in a dynamic pose" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/5aM8oht1It4eBStWs2cBFgdmJD9CW3fwQtq4EseLss2Dwo8nA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a new release romantic movie with a couple embracing" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/xMedBNtJgIXRDaduaJV8MVfPAVUejH2tHc9LRiavEjblwo8nA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a new release horror movie with a creepy figure in the background" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/PeIAefEE67FXuogZhKYCw7WNYNulLaFefPUUX8O16WZJfFlfJA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a new release comedy movie with a group of friends laughing" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/wYSuL237TmoDKJwUgoPFfk2GoTKOu4aqizTbRSfiYD1KYUenA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a new release sci-fi movie with futuristic elements and spaceships" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/AvLBtXfwxby5OKlcFd8nwwrdZHbR5OifAZe4I4D1VQUwvo8nA.jpg" width="200"/>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 mb-4">
+     <img alt="Poster of a new release documentary with a thought-provoking image" class="movie-poster" height="300" src="https://storage.googleapis.com/a1aa/image/eSFUswgRmjybJqmetHKnZBoUahMmAVj955cvphEs1wVOYUenA.jpg" width="200"/>
+    </div>
+   </div>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQpe9F2lY6J1L9p5/5RT2e5p4l0d7bQ5p5p5p5p5p" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQpe9F2lY6J1L9p5/5RT2e5p4l0d7bQ5p5p5p5p5p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
+  </script>
+ </body>
+</html>
